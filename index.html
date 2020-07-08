@@ -1,14 +1,14 @@
-<html lang="en">
+<html lang="en" dir="rtl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/style.css">
         <title>Document</title>
     </head>
     <body>
         <header>
             <div class="row">
-                <div class="col-lg-12 he">
+                <div class="col-lg-12 new-page he">
                     <nav>
                         <ul>
                             <li><a href="#">Home</a></li>
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </header>
-        <section class="technoligies">
+        <section class="technoligies new-page">
             <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quo, rerum ea quod ratione tempore facere vitae eveniet odit totam autem et facilis suscipit neque sit fugit repudiandae veniam praesentium!</p>
             <div class="row">
                 <div class="col-lg-12 items-wrapper">
@@ -73,5 +73,38 @@
                 <button class="more" type="button">More</button>
             </div>
         </section>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="contscts new-page">
+                    <h1>الاتصال بنا...</h1>
+                    <p>نحن نرحب برسائلكم. الرجاء ارسل لنا المعلومات التالية:</p>
+                    <div class="form-container">
+                        <form>
+                            <div class="first-name">
+                                <label for="first-name">الاسم الاول</label>
+                                <input class="name" type="text" name="first-name" id="first-name" placeholder="الاسم الاول">
+                            </div>
+                            <div class="second-name">
+                                <label for="second-name">الاسم الثاني</label>
+                                <input class="name" type="text" name="second-name" id="second-name" placeholder="الاسم الثاني">
+                            </div>
+                            <div class="full-width email">
+                                <label for="email">البريد الالكتروني</label>
+                                <input type="email" name="email" id="email" placeholder="example@mail.com">
+                            </div>
+                            <div class="full-width messsage">
+                                <label for="messsage">نص الرسالة</label>
+                                <textarea class="messsage" id="messsage" placeholder="ادخل رسالتك هنا..."></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <input type="submit" value="ارسال">
+                                <!-- <button type="submit">ارسال</button> -->
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
     </body>
 </html>

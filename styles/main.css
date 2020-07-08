@@ -26,18 +26,25 @@
   width:200px;
 }
 
-.he{ 
+.new-page {
   height: 100vh;
   max-height: 100vh;
   position: relative;
+}
+
+.he{ 
   background-image: url('../images/long-road.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   background-color:#464646;
-   
 }
+@font-face {
+  src: url('../fonts/Tajawal-Medium.ttf');
+  font-family: Tajawal;
+}
+
 .second-lyer{
   position:absolute;
   height: 100%;
@@ -88,9 +95,9 @@ h1,h3{
 }
 
 .technoligies {
-  height: 100vh;
-  max-height: 100vh;
-  position: relative;
+  /* height: 100vh;
+  max-height: 100vh; */
+  /* position: relative; */
 }
 
 .description {
@@ -148,13 +155,61 @@ h1,h3{
   text-align: center;
 }
 
-.specific > .more {
+.specific .more {
   margin-top: 10vh;
-  margin-left: 35vw;
+  margin-left: auto;
+  margin-right: auto;
   width: 176px;
   height: 49px;
   font-size: 1.2rem;
   background-color: greenyellow;
+}
+
+.contscts {
+  background-color: #eeebeb;
+  font-family: 'Tajawal', sans-serif;
+}
+.contscts h1 {
+  padding-top: 5%;
+}
+.contscts h1, p {
+  text-align: right;
+  margin-right: 2%;
+}
+.form-container {
+  width: 95%;
+  padding: 2%;
+}
+.form-container div input, label , textarea {
+  display: block;
+  margin-bottom: 2%;
+}
+
+.form-container input , textarea {
+  border: 2px solid black;
+  padding: 1%;
+}
+
+.form-container .first-name {
+  float: right;
+  width: 40%;
+}
+
+.form-container .second-name {
+  float: left;
+  width: 40%;
+}
+
+.first-name input, .second-name input{
+  width: 100%;
+}
+
+.form-container .full-width {
+  clear: both;
+}
+
+.full-width input, textarea {
+  width: 100%;
 }
 
 @media (min-width:600px){
