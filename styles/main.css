@@ -143,12 +143,12 @@ h1,h3{
 }
 
 .item > h2 {
-  margin-top: 2em; 
+  margin-top: 6vh; 
   text-align: center;
 }
 
 .specific {
-  margin: 10vh 5vw;
+  margin: 10vh 0vw;
 }
 
 .specific > h2,p {
@@ -170,7 +170,7 @@ h1,h3{
   font-family: 'Tajawal', sans-serif;
 }
 .contscts h1 {
-  padding-top: 5%;
+  padding-top: 15%;
 }
 .contscts h1, p {
   text-align: right;
@@ -227,7 +227,7 @@ h1,h3{
   .col-sm-12 {width: 100%;}
   .social {
       margin-top: 60vh;
-  } 
+  }
 }
 
 @media (min-width:768px){
@@ -243,6 +243,9 @@ h1,h3{
   .col-md-10 {width: 83.33%;}
   .col-md-11 {width: 91.66%;}
   .col-md-12 {width: 100%;} 
+  .contscts {
+      height: 100%;
+  }
 }
 
 @media (min-width:992px){
