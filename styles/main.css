@@ -6,7 +6,6 @@
 [class*="col-"]{
   box-sizing: border-box;
   float:right;
-
 }
 
 .row::after{
@@ -27,7 +26,7 @@
 }
 
 .new-page {
-  height: 100vh;
+  height: auto;
   max-height: 100vh;
   position: relative;
 }
@@ -108,41 +107,42 @@ h1,h3{
 .item {
   display: block;
   height: 20vh;
+  background-color: white;
 }
 
-#item-1{
-  background-color: greenyellow;
-}
+/* #item-1{
+  background-color: white;
+} */
 
 #item-2{
-  background-color: rebeccapurple;
+  background-color: gainsboro;
 }
 
 #item-3{
-  background-color: greenyellow;
+  background-color: gray;
 }
 
 #item-4{
-  background-color: rebeccapurple;
+  background-color: gainsboro;
 }
 
 #item-5{
-  background-color: rebeccapurple;
+  background-color: gainsboro;
 }
 
 #item-6{
-  background-color: greenyellow;
+  background-color: gray;
 }
 
 #item-7{
-  background-color: rebeccapurple;
+  background-color: gainsboro;
 }
 
 #item-8{
-  background-color: greenyellow;
+  background-color: gray;
 }
 
-.item > h2 {
+.item h2 {
   margin-top: 6vh; 
   text-align: center;
 }
@@ -162,7 +162,8 @@ h1,h3{
   width: 176px;
   height: 49px;
   font-size: 1.2rem;
-  background-color: greenyellow;
+  background-color: gray;
+  color: black;
 }
 
 .contscts {
@@ -212,6 +213,64 @@ h1,h3{
   width: 100%;
 }
 
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(84, 26, 177, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.item:nth-child(-n+4):nth-child(even) .flip-card-front {
+  background-color: gray;
+}
+
+.item:nth-child(n+5):nth-child(odd) .flip-card-front {
+  background-color: gray;
+}
+
+/* .item:nth-child(6n) .flip-card-front {
+  background-color: white;
+} */
+
+/* .flip-card-front:nth-child(even) {
+  background-color: wheat;
+} */
+/* .flip-card-front {
+  background-color: gray;
+} */
+
+.flip-card-back {
+  background-color: rgb(29, 30, 31);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  text-align: center;
+  margin-top: 6vh; 
+}
+
 @media (min-width:600px){
   .col-sm-1 {width: 8.33%;}
   .col-sm-2 {width: 16.66%;}
@@ -227,6 +286,11 @@ h1,h3{
   .col-sm-12 {width: 100%;}
   .social {
       margin-top: 60vh;
+  }
+
+  .new-page {
+      height: 100%;
+      position: relative;
   }
 }
 
